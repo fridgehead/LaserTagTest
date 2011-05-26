@@ -1,0 +1,7 @@
+Test service for Bluetooth -> intent stuff
+
+Reads a bluetooth Serial Port and forwards the data to a broadcast intent.
+
+Its been a while since I've written any threaded stuff so let me know if this fails :D
+
+
