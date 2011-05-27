@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <service android:name=".GunService" android:permission="android.permission.BLUETOOTH"></service>
+        <activity android:name=".GuiActivity"></activity>
 
     </application>
 </manifest>

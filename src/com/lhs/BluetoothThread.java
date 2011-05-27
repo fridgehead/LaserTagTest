@@ -43,12 +43,12 @@ public class BluetoothThread extends Thread  {
 		} catch (IllegalArgumentException e){
 			Log.v("BluetoothThread", "illegal address format");
 			ready = false;
-			parent.received("FAILEDCONNECT");
+			parent.received("DISCONNECT");
 
 		} catch (IOException e) {
 			Log.v("BluetoothThread", "IO Exception on connect");
 			ready = false;
-			parent.received("FAILEDCONNECT");
+			parent.received("DISCONNECT");
 		}
 		
 	}
@@ -94,6 +94,7 @@ public class BluetoothThread extends Thread  {
 				//alert the parent class
 				//wait for reconnect
 				ready = false;
+				parent.received("DISCONNECT");
 
 			}
 
