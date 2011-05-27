@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView android:id="@+id/healthText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="40sp" android:text="HEALTH:" android:paddingRight="20sp"></TextView>
+    <TextView android:text="100" android:layout_height="wrap_content" android:typeface="sans" android:textSize="40sp" android:id="@+id/HealthValue" android:layout_width="wrap_content" android:textStyle="bold" android:layout_toRightOf="@+id/healthText" android:layout_alignTop="@+id/healthText" android:layout_alignBottom="@+id/healthText"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/healthText" android:layout_alignLeft="@+id/healthText" android:layout_alignRight="@+id/healthText" android:id="@+id/ShieldText" android:text="SHIELD:" android:typeface="sans" android:textSize="40sp"></TextView>
+    <TextView android:text="100" android:layout_height="wrap_content" android:typeface="sans" android:textSize="40sp" android:id="@+id/textView2" android:layout_width="wrap_content" android:textStyle="bold" android:layout_toRightOf="@+id/ShieldText" android:layout_alignTop="@+id/ShieldText" android:layout_alignBottom="@+id/ShieldText"></TextView>
+    <ListView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:id="@+id/messageListView"></ListView>
+</RelativeLayout>
